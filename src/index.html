@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-blue-100">
+    <main class="w-[400px] bg-white min-h-[500px] mx-auto mt-12 p-10">
+        <header>
+            <h1 class="text-3xl font-serif font-bold mb-5">Job Lists</h1>
+        </header>
+        <section>
+            <div class="border border-stone-950 flex justify-between flex-grow mb-5">
+                <input class="font-mono outline-none ps-5" type="text" id="jobInput" />
+                <button class="bg-stone-950 text-white size-8 flex justify-center items-center" id="jobBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section>
+            <div class="flex justify-between mb-5">
+                <h4 class="text-xl font-bold font-serif">Your List</h4>
+                <div class="flex gap-1 bg-stone-950 text-white px-3 rounded-full text-sm justify-center items-center">
+                    <span id="doneCount">0</span>
+                    <span>/</span>
+                    <span id="totalCount">0</span>
+                </div>
+            </div>
+
+            <div class="list-group" id="listGroup">
+                <div class="empty-stage last:block hidden">
+                    <div class="flex flex-col items-center justify-center mt-20">
+                        <img width="150" src="../undraw_no_data_re_kwbl.svg" alt="" />
+                        <p class="font-mono font-light text-lg mt-2">There is no list</p>
+                    </div>
+                </div>
+           
+                
+            </div>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
